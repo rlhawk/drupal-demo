@@ -1,13 +1,5 @@
 {
   "trailingComma": "all",
   "singleQuote": true,
-  "semi": false,
-  "overrides": [
-    {
-      "files": ["composer.json"],
-      "options": {
-        "tabWidth": 4
-      }
-    }
-  ]
+  "semi": false
 }
