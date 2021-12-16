@@ -6,12 +6,14 @@ config:
 
 services:
   appserver:
-    build:
-      - composer install
-      - npm install
     build_as_root:
-      - curl -sL https://deb.nodesource.com/setup_14.x | bash -
+      - curl -sL https://deb.nodesource.com/setup_16.x | bash -
       - apt-get install -y nodejs
+  database:
+    creds:
+      database: drupal
+      username: drupal
+      password: drupal
 
   # Mailhog service to catch all mail notifications sent from appserver.
   mailhog:
