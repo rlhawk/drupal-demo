@@ -22,5 +22,17 @@
   <file>./web/sites/default/services.yml</file>
   <file>./settings/</file>
 
-  <exclude-pattern>web/themes/custom/*/dist</exclude-pattern>
+  <!-- Define directories and files to exclude. -->
+  <exclude-pattern>./private/</exclude-pattern>
+  <exclude-pattern>./vendor/</exclude-pattern>
+  <exclude-pattern>./web/autoload.php</exclude-pattern>
+  <exclude-pattern>./web/core/</exclude-pattern>
+  <exclude-pattern>./web/index.php</exclude-pattern>
+  <exclude-pattern>./web/libraries/</exclude-pattern>
+  <exclude-pattern>./web/modules/contrib/</exclude-pattern>
+  <exclude-pattern>./web/profiles/contrib/</exclude-pattern>
+  <exclude-pattern>./web/sites/*/files/</exclude-pattern>
+  <exclude-pattern>./web/themes/contrib/</exclude-pattern>
+  <exclude-pattern>./web/themes/custom/*/dist</exclude-pattern>
+  <exclude-pattern>./web/update.php</exclude-pattern>
 </ruleset>
